@@ -1,0 +1,24 @@
+Canvas:
+	Int width //canvas width
+	Int height //canvas height
+	Vector<vector<int>> points //Matrix of points
+		NOTE: 
+			std::vector< std::vector<int> > vec(numCols, std::vector<int>(numRows, 0));
+
+	Vector<layer> layers // list of each layer
+	Int activeLayer //index of active layer
+	createNewLayer() // function to add a new layer
+	setActiveLayer(int) //function to set which layer is active
+	drawRect(int x, int y) //f(x) to draw rect
+	drawLine(int x, int y) //f(x) to draw line //COMPARE SLOPE TO CHECK IF PIXEL IS IN LINE
+			for each point between x & y if slope between
+	updateCanvas() //f(x) to update points matrix based on each layer
+	displayCanvas() //Draw points
+Layer:
+	Int width //canvas width
+	Int height //canvas height
+	Vector<vector<int>> points //Matrix of points
+		NOTE: 
+			std::vector< std::vector<int> > vec(numCols, std::vector<int>(numRows, 0));
+	setPoint(x,y) // bump a bit
+	getPoint(x,y) //What is the bit?
